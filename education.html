@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-color:   #f7b9eb ;
+  }
+
+table.table1 {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 20%;
+  border: 1px solid black;
+  
+}
+table.table2 {
+  position: absolute;
+  top: 500px;
+  left: 1000px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 20%;
+  
+  
+}
+
+
+
+table.table1 td,table.table1 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+table.table1 tr:nth-child(even) {
+  background-color: #dddddd;
+
+}
+
+table.table2 td,table.table2 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+table.table2 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+table.table3 td,table.table3 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+table.table3 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h1{
+  position: absolute;
+  color:   #fef5e7 ;
+  left: 500px;
+  top: 100px;
+  font-family: "Lucida Console", Courier, monospace;
+
+  }
+
+
+h3{
+  position: absolute;
+  left: 8px;
+  top: 40px;
+  right: 8px;
+  }
+h4{
+  position: relative;
+  left: 100px;
+  top: 420px;
+  right: 8px;
+  font-size: 40px;
+  }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Courier, monospace;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:#273746;
+  color: #ebf5fb;
+}
+
+li a:hover:not(.active) {
+  background-color: #5d6d7e;
+  color:  #f8f9f9;
+}
+p1{
+  position: absolute;
+  left: 200px;
+  top: 390px;
+  color:  #273746;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+p2{
+  position: absolute;
+  left: 1000px;
+  top: 420px;
+  color:  #273746;
+  font-family: "Lucida Console", Courier, monospace;
+}
+p3{
+  position: absolute;
+  left: 200px;
+  top: 950px;
+  color:  #273746;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+
+</style>
+<p1 style="font-size:25px;" >
+  <h2>O/L Results</h2>
+  <h4>FACULTY EXAM GRADES</h4>
+</p1>
+<table class="table1">
+  <tr>
+     <th>SUBJECT</th>
+     <th>GRADE</th>
+  </tr>
+  <tr>
+    <td>SINHALA</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>MATHEMATICS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>HISTORY</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>ART</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>COMMERCE</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>HEALTH</td>
+    <td>A</td>
+  </tr>
+    <tr>
+    <td>BUDDHISM</td>
+    <td>A</td>
+  </tr>
+    <tr>
+    <td>ENGLISH</td>
+    <td>B</td>
+  </tr>
+    <tr>
+    <td>SCIENCE</td>
+    <td>B</td>
+  </tr>
+</table>
+<p2 style="font-size:40px;">A/L Results</p2>
+<table class="table2">
+
+  <tr>
+    <td>Z-SCORE</td>
+    <td>1.6659</td>
+  </tr>
+  <tr>
+    <td>DISTRICT RANK</td>
+    <td>148</td>
+  </tr>
+  <tr>
+    <td>ISLAND RANK</td>
+    <td>1540</td>
+  </tr>
+
+<style>
+    table {
+            position: absolute;
+            left: 300px;
+            top: 360px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+    
+        td,
+        th {
+            border: 1px solid #cccccc;
+            padding: 8px;
+        }
+    
+        th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    
+ </style>
+<style>
+    table {
+            position: absolute;
+            left: 300px;
+            top: 1000px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+    
+        td,
+        th {
+            border: 1px solid #cccccc;
+            padding: 8px;
+            border: 1px solid black;
+        }
+    
+        th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    
+ </style>
+<script>
+    let sortDirection = false;
+    let personData = [
+        {SEMESTER : 1, COURCE_CODE: 'CE 1201',SUBJECT_NAME :'Properties of Materials',GRADE:'B',VALIDE :7 },
+        {SEMESTER : 1, COURCE_CODE: 'CO 1201',SUBJECT_NAME :'Introduction to Computer System',GRADE:'B',VALIDE :6},
+        {SEMESTER : 1, COURCE_CODE: 'EE 1201',SUBJECT_NAME :'Electrical',GRADE:'A-',VALIDE :6},
+        {SEMESTER : 1, COURCE_CODE: 'ME 1301',SUBJECT_NAME :'Engineering Machanics',GRADE:'B+',VALIDE :6 },
+        {SEMESTER : 1, COURCE_CODE: 'ME 1202',SUBJECT_NAME :'Introduction to Thermodynamics',GRADE:'B',VALIDE :6},
+        {SEMESTER : 1, COURCE_CODE: 'IS 1301',SUBJECT_NAME :'Mathematics',GRADE:'A-',VALIDE :9},
+        {SEMESTER : 1, COURCE_CODE: 'IS 1151',SUBJECT_NAME :'English for Communication',GRADE:'B',VALIDE :6},
+        {SEMESTER : 1, COURCE_CODE: 'IS 1171',SUBJECT_NAME :'History of Science and Technology',GRADE:'B-',VALIDE :4},
+        {SEMESTER : 1, COURCE_CODE: 'IS 1281',SUBJECT_NAME :'Engineering Measurement',GRADE:'B',VALIDE :4},
+        {SEMESTER : 2, COURCE_CODE: 'ME 1304',SUBJECT_NAME :'Engineering Drowing',GRADE:'B+',VALIDE :7},
+        {SEMESTER : 2, COURCE_CODE: 'IS 1302',SUBJECT_NAME :'Engineering Mathematics II',GRADE:'B',VALIDE :9},
+        {SEMESTER : 2, COURCE_CODE: 'CE 1202',SUBJECT_NAME :'Introduction to Fluid Mechanics',GRADE:'B-',VALIDE :7 },
+        {SEMESTER : 2, COURCE_CODE: 'CO 1302',SUBJECT_NAME :'Programming for Engineers',GRADE:'A-',VALIDE :6},
+        {SEMESTER : 2, COURCE_CODE: 'EE 1302',SUBJECT_NAME :'Electronics',GRADE:'A',VALIDE :5},
+        {SEMESTER : 2, COURCE_CODE: 'ME 1303',SUBJECT_NAME :'Basic Manufacturing Processes',GRADE:'B',VALIDE :6 },
+        {SEMESTER : 2, COURCE_CODE: 'IS 1152',SUBJECT_NAME :'Presentation Skills English',GRADE:'A',VALIDE :6}
+     
+    ];
+    window.onload = () => {
+        loadTableData(personData);
+    }
+    function loadTableData(personData) {
+        const tableBody = document.getElementById('tableData');
+        let dataHtml = '';
+
+        for (let person of personData) {
+            dataHtml += `<tr><td>${person.SEMESTER}</td><td>${person.COURCE_CODE}</td><td>${person.SUBJECT_NAME}</td><td>${person.GRADE}</tb></tr>`;
+        }
+        tableBody.innerHTML = dataHtml;
+    }
+    function sortColumn(columnName,dataType) {
+        sortDirection = !sortDirection;
+        switch (dataType) {
+            case "string":
+                sortNumberColumn(sortDirection, columnName);
+                break;
+            case "number":
+                sortNumberColumn(sortDirection, columnName);
+                break;
+            default:
+        }
+        loadTableData(personData);
+    }
+    function sortNumberColumn(sort, columnName) {
+        personData = personData.sort((p1, p2) => {
+            return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName]
+        });
+    }
+
+  function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById('tableData');
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+<body>
+<body background="white-space">
+<h3><img src="educationB.jpg" alt="Trulli" width=100% height="300"></h3>
+<h1><font size="100">EDUCATION</font></h1>
+
+<ul>
+
+  <li><a href="./index.html">INDEX</a></li>
+  <li><a class="active">EDUCATION</a></li>
+  <li><a href="./projects.html">PROJECTS</a></li> 
+  <li><a href="./contact.html">CONTACT</a></li>
+  <li><a href="./interest.html">INTEREST</a></li>
+</ul>
+
+ <table>
+        <thread>
+            <tr>
+                <th onclick="sortColumn('SEMESTER','number')">_SEMESTER</th>
+                <th onclick="sortTable(1)">_COURCE_CODE</th>
+                <th onclick="sortTable(2)">_SUBJECT_NAME</th>
+                <th onclick="sortColumn('VALIDE','number')">_GRADE</th>
+            </tr>
+        </thread>
+        <tbody id="tableData"></tbody>
+    </table>
+
+
+
+
+
+</body>
+</html>
